@@ -1,0 +1,60 @@
+.books-list-container {
+  max-width: 900px;
+  width: 90%;
+  margin: 20px auto;
+  > ul {
+    margin: 2px;
+    padding: 0;
+    > li {
+      border: 1px solid #333;
+      margin: 10px;
+      padding: 10px;
+      h2 {
+        font-size: 18px;
+        line-height: 1.5;
+        text-decoration: underline;
+        font-weight: bold;
+        a {
+          margin: 0;
+          &:hover,
+          &.active {
+            color: blue;
+          }
+        }
+      }
+      p {
+        font-size: 14px;
+        line-height: 1.4;
+      }
+      span {
+        font-size: 14px;
+        line-height: 1.4;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+      .more-details {
+        margin-top: 15px;
+        ul {
+          margin: 5px 0 0 25px;
+          padding: 0;
+          list-style-type: circle;
+          li {
+            list-style-type: circle;
+            font-size: 14px;
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+  }
+  .button-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    button:hover {
+      background: blue;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}

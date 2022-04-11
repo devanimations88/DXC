@@ -1,0 +1,40 @@
+html,
+body {
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+ul,
+li {
+  list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #333;
+  text-decoration: none;
+  margin: 10px;
+  text-align: center;
+  &:hover,
+  &:active,
+  &.active {
+    color: #000;
+    text-decoration: underline;
+  }
+}
+main {
+  min-height: 80vh;
+}
+.message {
+  padding-top: 100px;
+  text-align: center;
+}

@@ -1,0 +1,30 @@
+header {
+  background: #ccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 5px solid #333;
+  align-items: center;
+  @media only screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+  .logo {
+    font-size: 40px;
+    padding: 20px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-right: 10px;
+    @media only screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+    a {
+      &:hover,
+      &.active {
+        color: blue;
+      }
+    }
+  }
+}
